@@ -55,3 +55,31 @@ s1=Student('joseph',111)
 def display(self):
         print("Name:%s, roll_number:%d, age:%d, Marks:%d"  % (self.name, self.roll_number, self.Age,self.Marks))        
         
+
+
+
+
+================================================================================================================================
+Corrected 3rd ques:
+
+class Student():
+    def __init__(self, name, roll_number,age, Marks):   ##you need to add marks and age here to initilize
+        self.name = name
+        self.roll_number = roll_number
+        self.age = age
+        self.Marks = Marks
+        
+        
+    def setAge(self):
+           self.age = 25
+           return self.age
+
+    def setMarks(self):
+         self.Marks = 495  
+         return self.Marks
+
+    def display(self):
+        print("Name:%s, roll_number:%d, age:%d, Marks:%d"  % (self.name, self.roll_number, self.age,self.Marks)) 
+
+        
+s1=Student('joseph',111, 36, 90)
